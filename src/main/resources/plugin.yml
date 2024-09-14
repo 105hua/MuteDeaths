@@ -1,0 +1,4 @@
+name: MuteDeaths
+version: '1.0-SNAPSHOT'
+main: joshdev.muteDeaths.MuteDeaths
+api-version: '1.21'
