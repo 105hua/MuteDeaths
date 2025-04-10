@@ -3,6 +3,7 @@ package joshdev.muteDeaths;
 
 import io.papermc.paper.command.brigadier.CommandSourceStack;
 import joshdev.muteDeaths.events.PlayerDeath;
+import joshdev.muteDeaths.events.PlayerJoin;
 import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.incendo.cloud.annotations.AnnotationParser;
@@ -34,6 +35,8 @@ public final class MuteDeaths extends JavaPlugin {
     }
     // Register death event.
     getServer().getPluginManager().registerEvents(new PlayerDeath(), this);
+    // Register join event to send a reminder if player is muted.
+    getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
     // Ready message
     getLogger().info("MuteDeaths is good to go!");
   }
