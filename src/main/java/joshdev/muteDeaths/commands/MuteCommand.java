@@ -19,12 +19,14 @@ import org.incendo.cloud.annotations.processing.CommandContainer;
 public class MuteCommand {
 
   private static final TextComponent MUTE_ON =
-          Component.text("✔ ", NamedTextColor.DARK_GREEN)
-                  .append(Component.text("Your death messages are now muted.", NamedTextColor.GREEN));
+      Component.text("✔ ", NamedTextColor.DARK_GREEN)
+          .append(Component.text("Your death messages are now muted.", NamedTextColor.GREEN));
 
   private static final TextComponent MUTE_OFF =
-          Component.text("✖ ", NamedTextColor.RED)
-                  .append(Component.text("Your death messages are now visible to others.", NamedTextColor.GREEN));
+      Component.text("✖ ", NamedTextColor.RED)
+          .append(
+              Component.text(
+                  "Your death messages are now visible to others.", NamedTextColor.GREEN));
 
   private static final TextComponent ERROR_MESSAGE =
       Component.text(
