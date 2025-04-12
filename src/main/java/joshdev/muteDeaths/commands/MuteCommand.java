@@ -15,6 +15,7 @@ import org.incendo.cloud.annotations.CommandDescription;
 import org.incendo.cloud.annotations.Permission;
 import org.incendo.cloud.annotations.processing.CommandContainer;
 
+@SuppressWarnings("unused")
 @CommandContainer
 public class MuteCommand {
 
